@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Update Inventory</title>
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+
+    <body>
+        <div id="header" class="mainHeader">
+            <hr>
+            <div class="center">Update Current Inventory</div>
+        </div>
+        <br>
+
+        <div id="mainContent">
+            <hr>
+            <div></div>
+        </div>
+
+        <div>
+            <form action="">
+                <br>
+                <label for="">Name of Inventory </label>
+                <select name="inventory-names" id="inventory-names">
+                    <option value="pencil">pencil</option>
+                    <option value="pens">pen</option>
+                    <option value="scissor">scissor</option>
+                    <option value="eraser">eraser</option>
+                    <option value="ruler">ruler</option>
+                    <option value="correction liquid">correction liquid</option>
+                </select>
+                
+                <br>
+                <label for="">Current amount: </label> 
+                <output name="current-amount"></output> <!-- php code to be added here -->
+
+                <br>
+                <label for="">New amount: </label>
+                <input type="number" inputmode="numeric"> <!-- php code to be added here -->
+                
+            </form>
+        </div>
+
+        <br><br>
+        <button type="submit">Update Database</button>
+
+        <br><br>
+        <a href="/html/view_current_inventory.html">Check Inventory amounts here</a>
+    </body>
+</html>
