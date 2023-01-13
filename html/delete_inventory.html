@@ -20,20 +20,20 @@
         <div>
             <form action="">
                 <br>
-                <label for="">Name of Inventory: </label>
-                <select name="inventory-names" id="inventory-names">
+                <label for="">Name of Inventory: </label>  <!-- php code here to pull inventory names from database table, code can be reused -->
+<!--                 <select name="inventory-names" id="inventory-names">
                     <option value="pencil">pencil</option>
                     <option value="pens">pen</option>
                     <option value="scissor">scissor</option>
                     <option value="eraser">eraser</option>
                     <option value="ruler">ruler</option>
-                    <option value="correction liquid">correction liquid</option>
+                    <option value="correction liquid">correction liquid</option> -->
                 </select>
             </form>
         </div>
 
         <br><br>
-        <button type="submit" name="delete" value="Delete" onclick="return confirm('Are you sure you want to delete?');">Delete Item from Database</button>
+        <button type="submit" name="delete" value="Delete" onclick="return confirm('Are you sure you want to delete?');">Delete Item from Database</button>  <!-- delete row from table once user confirms -->
 
         <br><br>
         <a href="/html/view_current_inventory.html">Check Inventory amounts here</a>

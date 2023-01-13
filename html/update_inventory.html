@@ -20,29 +20,29 @@
         <div>
             <form action="">
                 <br>
-                <label for="">Name of Inventory </label>
-                <select name="inventory-names" id="inventory-names">
+                <label for="">Name of Inventory </label>  <!-- add php code to inject list of current items that users can select-->
+<!--                 <select name="inventory-names" id="inventory-names">
                     <option value="pencil">pencil</option>
                     <option value="pens">pen</option>
                     <option value="scissor">scissor</option>
                     <option value="eraser">eraser</option>
                     <option value="ruler">ruler</option>
                     <option value="correction liquid">correction liquid</option>
-                </select>
+                </select> -->
                 
                 <br>
                 <label for="">Current amount: </label> 
-                <output name="current-amount"></output> <!-- php code to be added here -->
+                <output name="current-amount"></output> <!-- add php code to call stock_amount from selected item id, will need to immediately execute when user selects an item above -->
 
                 <br>
                 <label for="">New amount: </label>
-                <input type="number" inputmode="numeric"> <!-- php code to be added here -->
+                <input type="number" inputmode="numeric"> <!-- add php code here that will send data to the database table to be updated, will only run after submit button has been clicked -->
                 
             </form>
         </div>
 
         <br><br>
-        <button type="submit">Update Database</button>
+        <button type="submit">Update Database</button>  <!-- clicking this button send data from "New Amount" label to the database table to be updated -->
 
         <br><br>
         <a href="/html/view_current_inventory.html">Check Inventory amounts here</a>
